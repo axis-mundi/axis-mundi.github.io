@@ -366,7 +366,7 @@ div.motion {
 }
 
 .title-offset {
-  top: 0.9vw;
+  top: -0.9vw;
 }
 
 .title-motion {
@@ -652,7 +652,7 @@ div.motion {
   }
 
   .title-offset {
-    top: 2.5vw;
+    top: -2.5vw;
   }
 
   .title-motion {
