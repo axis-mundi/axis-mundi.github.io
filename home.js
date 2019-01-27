@@ -275,11 +275,11 @@ function onLeaveMotion() {
 }
 
 function scrollToHome () {
-  $('html, body').animate( {scrollTop: 0}, 1000);
+  $('html, body').animate( {scrollTop: 0}, 1800, 'easeInOutCubic', null);
 }
 
 function scrollToAbout () {
-  $('html, body').animate({scrollTop: $('#divider').offset().top + grid_size + 5 }, 1000);
+  $('html, body').animate({scrollTop: $('#divider').offset().top + grid_size + 5 }, 1800, 'easeInOutCubic', null);
 }
 
 function windowResized() {
