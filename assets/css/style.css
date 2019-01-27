@@ -434,6 +434,14 @@ div.motion {
   height: 6.75vw;
 }
 
+#dark-logo {
+  display: block;
+}
+
+#light-logo {
+  display: none;
+}
+
 #code-chunk,
 #design-chunk {
   display: none;
@@ -693,12 +701,12 @@ div.motion {
   /* Custom elements styling */
 
   #img-fluid {
-    top: 80.1vw;
+    top: 100vw;
     left: 20vw;
   }
 
   #img-motion {
-    top: 80.05vw;
+    top: 100vw;
     left: 20vw;
   }
 
