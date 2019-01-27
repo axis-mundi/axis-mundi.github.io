@@ -19,6 +19,8 @@ a:link,
 a:visited,
 a:hover,
 a:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
   color: #000;
   cursor: default;
   text-decoration: none;
@@ -418,6 +420,10 @@ div.motion {
   line-height: 1.9vw;
 } */
 
+#down-arrow {
+  display: none;
+}
+
 #img-fluid {
   top: 0px;
   left: 60vw;
@@ -466,12 +472,19 @@ div.motion {
   z-index: 3;
 }
 
-#vid-lg {
-  display: none;
+#pause-btn {
+  cursor: grab;
+  height: 18vw;
+  left: calc(50% - 9vw);
+  position: absolute;
+  top: calc(50% - 9vw);
+  width: 18vw;
+  visibility: hidden;
+  z-index: 3;
 }
 
-#vid-sm {
-  display: none;
+#vid {
+  -webkit-appearance: none;
 }
 
 #vid-placeholder {

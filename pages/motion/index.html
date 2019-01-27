@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=no">
     <title>Axis Mundi - Motion</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+		<script type="text/javascript" src="../../assets/vendors/mobile-detect.min.js"></script>
     <script type="text/javascript" src="../../assets/vendors/jquery.min.js"></script>
     <script type="text/javascript" src="../../libraries/p5.min.js"></script>
   	<script type="text/javascript" src="../../libraries/addons/p5.dom.js"></script>
@@ -33,17 +33,33 @@
         <div class="col-1"></div>
       </div>
       <div class="row space-8 space-sm-3">
-        <div class="col-14 col-sm-5">
-          <video id="vid" src="../../assets/vid/motion-lg.mp4" poster="../../assets/img/vid-motion-lg.png" class="space-8 space-sm-3" muted></video>
+        <div id="vid-wrapper" class="col-14 col-sm-5">
+          <video playsinline id="vid" src="../../assets/vid/motion-lg.mp4" poster="../../assets/img/vid-motion-lg.png" class="space-8 space-sm-3" controlsList="nodownload nofullscreen noremoteplayback" muted></video>
           <img id="vid-placeholder" class="space-8 space-sm-3" src="../../assets/img/vid-motion-lg.png" alt="">
-          <svg id="play-btn" viewBox="0 0 259 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg id="play-btn" width="263px" height="263px" viewBox="0 0 263 263" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
               <desc>Created with Sketch.</desc>
               <defs></defs>
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="fluid_desktop" transform="translate(-542.000000, -899.000000)" stroke="#FFFFFF" stroke-width="2">
-                      <circle id="Oval-2-Copy" cx="671.5" cy="1028.5" r="128.5"></circle>
-                      <polygon id="Triangle-Copy" points="726 1037 641 1085 641 989"></polygon>
+                  <g id="fluid_desktop" transform="translate(-546.000000, -895.000000)" stroke="#FFFFFF" stroke-width="5">
+                      <g id="Group-2" transform="translate(549.000000, 898.000000)">
+                          <circle id="Oval-2-Copy" cx="128.5" cy="128.5" r="128.5"></circle>
+                          <polygon id="Triangle-Copy" points="183 129 98 177 98 81"></polygon>
+                      </g>
+                  </g>
+              </g>
+          </svg>
+          <svg id="pause-btn" width="263px" height="263px" viewBox="0 0 263 263" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="fluid_desktop-copy" transform="translate(-546.000000, -895.000000)" stroke="#FFFFFF" stroke-width="5">
+                      <g id="Group" transform="translate(549.000000, 898.000000)">
+                          <circle id="Oval-2-Copy" cx="128.5" cy="128.5" r="128.5"></circle>
+                          <path d="M106.5,82.7519716 L106.5,177.751972" id="Path-2"></path>
+                          <path d="M154.5,82.7519716 L154.5,177.751972" id="Path-2-Copy"></path>
+                      </g>
                   </g>
               </g>
           </svg>

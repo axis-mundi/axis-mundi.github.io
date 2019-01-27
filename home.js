@@ -326,7 +326,7 @@ function windowResized() {
 
   if(isMobile()) {
     $('#down-arrow').css('top', ( $('#space-between-title-and-copyright').offset().top + grid_size * (Math.floor(windowHeight / grid_size) - 5) + 20 ) + 'px');
-  }
+  } 
 }
 
 function isMobile() {
