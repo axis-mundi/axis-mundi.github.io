@@ -238,3 +238,12 @@ function windowResized() {
   colorLimY = windowHeight / grid_size / 2;
   resizeCanvas(windowWidth, h);
 }
+
+function isMobile() {
+    var md = new MobileDetect(window.navigator.userAgent);
+    if(md.mobile()){
+        return true;
+    }else{
+        return false;
+    }
+}
