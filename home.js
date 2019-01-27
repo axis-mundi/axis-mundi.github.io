@@ -41,11 +41,20 @@ function setup()
       }
     });
     if(isMobile()) {
+      $('#down-arrow').css('display', 'block');
       $('.title-fluid').bind('click', function(e) {
         e.preventDefault();
         $body.scrollTop(0);
         setTimeout(function(){
           window.location = './pages/fluid/index.html';
+          $('#img-fluid').removeClass('show').addClass('hide').css('opacity', '0');
+          bgMode = 255;
+          strokeMode = 0;
+          $('.title-fluid').css({
+                                    'color': '#000',
+                                    'webkit-text-stroke': '0px'
+                                });
+          $('.title-motion').css('color', '#000');
         }, 50);
         bgMode = 255;
         strokeMode = 0;
@@ -69,6 +78,17 @@ function setup()
         $body.scrollTop(0);
         setTimeout(function(){
           window.location = './pages/motion/index.html';
+          $('#img-motion').removeClass('show').addClass('hide').css('opacity', '0');
+          bgMode = 255;
+          strokeMode = 0;
+          $('#dark-logo').css('display', 'block');
+          $('#light-logo').css('display', 'none');
+          $('#large-logo').attr('src', 'assets/img/large-dark-logo.png');
+          $('.title-fluid').css('color', 'black');
+          $('.title-motion').css('webkit-text-stroke', '0px');
+          $('#img-motion').removeClass('show').addClass('hide').css('opacity', '0');
+          $('.text').css('color', '#000');
+          $('.about .title').not('.title-motion').css('color', '#000');
         }, 50);
         bgMode = 49;
         strokeMode = 255;
@@ -263,7 +283,6 @@ function onLeaveFluid() {
 function onLeaveMotion() {
   bgMode = 255;
   strokeMode = 0;
-  // $('#logo').attr('src', 'assets/img/small-dark-logo.png');
   $('#dark-logo').css('display', 'block');
   $('#light-logo').css('display', 'none');
   $('#large-logo').attr('src', 'assets/img/large-dark-logo.png');
@@ -305,6 +324,9 @@ function windowResized() {
     return (className.match (/(^|\s)space-sm-\S+/g) || []).join(' ');
   }).addClass('space-sm-' + (Math.floor(windowHeight / grid_size) - 5));
 
+  if(isMobile()) {
+    $('#down-arrow').css('top', ( $('#space-between-title-and-copyright').offset().top + grid_size * (Math.floor(windowHeight / grid_size) - 5) + 20 ) + 'px');
+  }
 }
 
 function isMobile() {

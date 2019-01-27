@@ -278,7 +278,7 @@ a.title-fluid:active {
 /*   Custom class styling   */
 
 div.home {
-  cursor: url('../../assets/img/arrow-cursor.png'), auto;
+  cursor: url('../../assets/img/arrow-cursor.svg'), auto;
 }
 
 /* div.about,
@@ -699,6 +699,15 @@ div.motion {
   }
 
   /* Custom elements styling */
+
+  #down-arrow {
+    display: none;
+    height: 40px;
+    left: calc(70vw - 15px);
+    position: absolute;
+    top: calc(130vw - 20px);
+    width: 30px;
+  }
 
   #img-fluid {
     top: 100vw;
