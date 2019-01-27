@@ -594,16 +594,16 @@ div.motion {
   .fluid .title-fluid,
   .motion .title-motion {
     font-size: 18vw;
-    top: 7vw;
+    top: 2.8vw;
   }
 
   .footer-paragraph.footer-offset {
-    top: -2.6vw;
+    top: -3vw;
     left: -0.5vw;
   }
 
   .footer-nav.footer-offset {
-    top: -2.5vw;
+    top: -3vw;
   }
 
   .footer-paragraph {
@@ -646,7 +646,7 @@ div.motion {
 
   .title {
     font-size: 24vw;
-    left: -1.5vw;
+    left: -1.2vw;
     margin: 0;
     position: relative;
   }
@@ -671,7 +671,7 @@ div.motion {
   .title-code,
   .title-design {
     font-size: 18vw;
-    top: 6.8vw;
+    top: 2.8vw;
   }
 
   .title-concept {

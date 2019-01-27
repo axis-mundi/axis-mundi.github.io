@@ -50,10 +50,11 @@ function setup() {
   });
   $('.title-fluid').bind('mouseover', onHoverFluid).bind('mouseout', onLeaveFluid);
   $('#play-btn').click(function() {
-    $('#vid').get(0).play();
+    var vid = document.getElementById('vid');
+    vid.play();
     $('#vid-placeholder').css('z-index', '-1');
     $('#play-btn').css('visibility', 'hidden');
-    $('#vid').get(0).onended = function() {
+    vid.onended = function() {
       $('#vid-placeholder').css('z-index', '2');
       $('#play-btn').css('visibility', 'visible');
     }
