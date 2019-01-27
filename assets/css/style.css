@@ -185,11 +185,11 @@ a.title-fluid:active {
 }
 
 .footer-paragraph.footer-offset {
-  top: 2.7vw;
+  top: 0.65em;
 }
 
 .footer-nav.footer-offset {
-  top: -0.85vw;
+  top: -0.13em;
 }
 
 .footer-paragraph {
@@ -360,13 +360,13 @@ div.motion {
 
 .title {
   font-size: 7.9vw;
-  left: -0.5vw;
+  left: -0.07em;
   margin: 0;
   position: relative;
 }
 
 .title-offset {
-  top: -0.9vw;
+  top: -0.12em;
 }
 
 .title-motion {
@@ -646,13 +646,13 @@ div.motion {
 
   .title {
     font-size: 24vw;
-    left: -1.2vw;
+    left: -0.06em;
     margin: 0;
     position: relative;
   }
 
   .title-offset {
-    top: -2.5vw;
+    top: -0.13em;
   }
 
   .title-motion {
