@@ -185,11 +185,11 @@ a.title-fluid:active {
 }
 
 .footer-paragraph.footer-offset {
-  top: 3.6vw;
+  top: 2.7vw;
 }
 
 .footer-nav.footer-offset {
-  top: 0.85vw;
+  top: -0.85vw;
 }
 
 .footer-paragraph {
@@ -598,12 +598,12 @@ div.motion {
   }
 
   .footer-paragraph.footer-offset {
-    top: -1.2vw;
+    top: -2.6vw;
     left: -0.5vw;
   }
 
   .footer-nav.footer-offset {
-    top: 2.5vw;
+    top: -2.5vw;
   }
 
   .footer-paragraph {
