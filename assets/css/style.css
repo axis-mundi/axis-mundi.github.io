@@ -1,8 +1,8 @@
 @font-face {
     font-family: FoundersGrotesk-Light;
     src: url('../font/FoundersGroteskWeb-Light.eot');
-    src: url('FoundersGroteskWeb-Light.woff2') format('woff2'),
-          url('FoundersGroteskWeb-Light.woff') format('woff');
+    src: url('../font/FoundersGroteskWeb-Light.woff2') format('woff2'),
+          url('../font/FoundersGroteskWeb-Light.woff') format('woff');
 }
 
 html, body {
