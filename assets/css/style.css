@@ -298,8 +298,8 @@ div.home {
   position: fixed;
   left: 20px;
   top: 20px;
-  width: 4.444444vw;
-  height:4.444444vw;
+  width: 48px;
+  height:48px;
   z-index: 99;
 }
 
@@ -569,8 +569,6 @@ div.home {
   .home-btn {
     left: 20px;
     top: 20px;
-    width: 12.266667vw;
-    height:12.266667vw;
   }
 
   .gif {
