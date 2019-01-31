@@ -387,12 +387,16 @@ div.home {
   top: 0px;
   left: 60vw;
   opacity: 0;
+  height: 0;
+  width: 0;
 }
 
 #img-motion {
   top: 19.96vw;
   left: 40vw;
   opacity: 0;
+  height: 0;
+  width: 0;
 }
 
 #large-logo {
